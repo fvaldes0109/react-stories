@@ -1,4 +1,7 @@
 export default function UserCard({ username, avatarUrl, bio, isOnline }) {
+
+  const noUserPhoto = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBNdcMDNS2r9df1IWFVc8AY0QNtfNhEJv7fGS5TdhUWrlBqfGu1PCCn9lKpL-FqF9dWc&usqp=CAU";
+
   return (
     <div style={{
       display: 'flex',
@@ -20,7 +23,7 @@ export default function UserCard({ username, avatarUrl, bio, isOnline }) {
         overflow: 'hidden',
         marginBottom: '10px',
       }}>
-        <img src={avatarUrl} alt={username} width="100px" style={{borderRadius: '50%'}} />
+        <img src={avatarUrl || noUserPhoto} alt={username} width="100px" style={{borderRadius: '50%'}} />
       </div>
       <h2>{username}</h2>
       <p>{bio}</p>

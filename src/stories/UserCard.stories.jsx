@@ -14,7 +14,7 @@ export default {
 export const Online = {
   args: {
     username: "John Doe",
-    avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBNdcMDNS2r9df1IWFVc8AY0QNtfNhEJv7fGS5TdhUWrlBqfGu1PCCn9lKpL-FqF9dWc&usqp=CAU",
+    avatarUrl: "https://cdn.kibrispdr.org/data/862/user-profile-png-4.png",
     bio: "Hello, I'm John Doe!",
     isOnline: true,
   },
@@ -23,7 +23,16 @@ export const Online = {
 export const Offline = {
   args: {
     username: "John Doe",
-    avatarUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNBNdcMDNS2r9df1IWFVc8AY0QNtfNhEJv7fGS5TdhUWrlBqfGu1PCCn9lKpL-FqF9dWc&usqp=CAU",
+    avatarUrl: "https://cdn.kibrispdr.org/data/862/user-profile-png-4.png",
+    bio: "Hello, I'm John Doe!",
+    isOnline: false,
+  },
+};
+
+export const NoPhoto = {
+  args: {
+    username: "John Doe",
+    avatarUrl: "",
     bio: "Hello, I'm John Doe!",
     isOnline: false,
   },
